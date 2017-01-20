@@ -1,6 +1,6 @@
-# 
+# Using GitHub for IETF Working Groups
 
-This is the working area for the Individual internet-draft, "".
+This is the working area for the Individual Internet-Draft, "draft-eggert-github-bcp".
 
 * [Editor's copy](https://larseggert.github.io/github-bcp/)
 * [Individual Draft] (https://tools.ietf.org/html/draft-eggert-github-bcp)
