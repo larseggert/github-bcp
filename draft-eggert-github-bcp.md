@@ -85,7 +85,19 @@ The [WG Wiki](https://trac.ietf.org/trac/core/wiki) says:
 > should not happen in the forums implicitly created by the issues,
 > but on the WG mailing list.
 
-We currently do not have an active backup regime.
+We currently do not have an active backup regime; we would expect the
+IETF to come up with one that we can share.
+
+As the contributors to CoRE are not necessarily deeply involved in
+software projects that already make use of github, moving work to
+github may create a sudden barrier of entry for some contributors at
+the same time as other contributors report that
+the work got much easier for them.
+Also, accidents do happen (such as committing versions of a text that
+suddenly have CRLF line endings), and some authors may not know how to
+fix them.
+
+(There is a separate, chairs-only github organization for chair materials.)
 
 (Add similar text for 6Lo, T2TRG, LWIG, CBOR, LPWAN...)
 
