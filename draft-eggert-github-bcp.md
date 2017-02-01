@@ -49,6 +49,45 @@ service to support the operation of IETF Working Groups.
 
 # Introduction
 
+# Experiences from Current WGs Actively Using GitHub
+
+## HTTPBIS
+
+## TLS
+
+## ACME
+
+## CORE
+
+\[blame Carsten Bormann for this subsection]
+
+The CoRE WG (Constrained RESTful Environments) has been actively using
+the Trac/SVN combination offered by the Tools Team for its older
+drafts.
+Some newer drafts (including some drafts that are not yet WG drafts
+but could be considered candidates for that) are now being worked on
+in the `core-wg` github organization.
+These drafts generally use Martin Thomson's template, except where the
+build process (examples, grammars) is much more complicated than can
+easily be supported by this template.
+
+We try to keep discussion on the mailing list (as opposed to getting
+them entirely in the github issues), but may not have been very
+successful in that; it definitely requires constant vigilance.
+
+The [WG Wiki](https://trac.ietf.org/trac/core/wiki) says:
+
+> With respect to the mode of operation of the repository, the CoRE WG
+> follows the lead of the HTTPBIS WG [add link here]. Specifically
+> that means that github issues are welcome to record editorial issues
+> as well as technical ones; as are "pull requests" (forks of the
+> repository with fixes for an issue). However, technical discussion
+> should not happen in the forums implicitly created by the issues,
+> but on the WG mailing list.
+
+We currently do not have an active backup regime.
+
+(Add similar text for 6Lo, T2TRG, LWIG, CBOR, LPWAN...)
 
 # Security Considerations
 
