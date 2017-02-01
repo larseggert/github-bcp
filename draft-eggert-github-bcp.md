@@ -101,6 +101,8 @@ This document has no IANA considerations.
 
 # Acknowledgments
 
+Carsten Borman and Paul Hoffman have contributed text to this document.
+
 Lars Eggert has received funding from the European Union's Horizon 2020 research
 and innovation program 2014-2018 under grant agreement 644866 ("SSICLOPS"). This
 document reflects only the authors' views and the European Commission is not
