@@ -78,7 +78,7 @@ successful in that; it definitely requires constant vigilance.
 The [WG Wiki](https://trac.ietf.org/trac/core/wiki) says:
 
 > With respect to the mode of operation of the repository, the CoRE WG
-> follows the lead of the HTTPBIS WG [add link here]. Specifically
+> follows the lead of the [HTTPBIS WG](http://httpwg.org/). Specifically
 > that means that github issues are welcome to record editorial issues
 > as well as technical ones; as are "pull requests" (forks of the
 > repository with fixes for an issue). However, technical discussion
