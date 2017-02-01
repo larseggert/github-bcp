@@ -278,10 +278,15 @@ address {
 
   <link href="#rfc.toc" rel="Contents"/>
 <link href="#rfc.section.1" rel="Chapter" title="1 Introduction"/>
-<link href="#rfc.section.2" rel="Chapter" title="2 Security Considerations"/>
-<link href="#rfc.section.3" rel="Chapter" title="3 IANA Considerations"/>
-<link href="#rfc.section.4" rel="Chapter" title="4 Acknowledgments"/>
-<link href="#rfc.references" rel="Chapter" title="5 Informative References"/>
+<link href="#rfc.section.2" rel="Chapter" title="2 Experiences from Current WGs Actively Using GitHub"/>
+<link href="#rfc.section.2.1" rel="Chapter" title="2.1 HTTPBIS"/>
+<link href="#rfc.section.2.2" rel="Chapter" title="2.2 TLS"/>
+<link href="#rfc.section.2.3" rel="Chapter" title="2.3 ACME"/>
+<link href="#rfc.section.2.4" rel="Chapter" title="2.4 CORE"/>
+<link href="#rfc.section.3" rel="Chapter" title="3 Security Considerations"/>
+<link href="#rfc.section.4" rel="Chapter" title="4 IANA Considerations"/>
+<link href="#rfc.section.5" rel="Chapter" title="5 Acknowledgments"/>
+<link href="#rfc.references" rel="Chapter" title="6 Informative References"/>
 <link href="#rfc.authors" rel="Chapter"/>
 
 
@@ -290,7 +295,7 @@ address {
 
   <meta name="dct.creator" content="Eggert, L." />
   <meta name="dct.identifier" content="urn:ietf:id:draft-eggert-github-bcp-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2017-1-20" />
+  <meta name="dct.issued" scheme="ISO8601" content="2017-2-01" />
   <meta name="dct.abstract" content="This document describes the best current practices on using the GitHub web service to support the operation of IETF Working Groups." />
   <meta name="description" content="This document describes the best current practices on using the GitHub web service to support the operation of IETF Working Groups." />
 
@@ -311,10 +316,10 @@ address {
 </tr>
 <tr>
   <td class="left">Intended status: Best Current Practice</td>
-  <td class="right">January 20, 2017</td>
+  <td class="right">February 01, 2017</td>
 </tr>
 <tr>
-  <td class="left">Expires: July 24, 2017</td>
+  <td class="left">Expires: August 5, 2017</td>
   <td class="right"></td>
 </tr>
 
@@ -335,7 +340,7 @@ address {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on July 24, 2017.</p>
+<p>This Internet-Draft will expire on August 5, 2017.</p>
 <h1 id="rfc.copyrightnotice">
   <a href="#rfc.copyrightnotice">Copyright Notice</a>
 </h1>
@@ -348,24 +353,45 @@ address {
   <ul class="toc">
 
   	<li>1.   <a href="#rfc.section.1">Introduction</a></li>
-<li>2.   <a href="#rfc.section.2">Security Considerations</a></li>
-<li>3.   <a href="#rfc.section.3">IANA Considerations</a></li>
-<li>4.   <a href="#rfc.section.4">Acknowledgments</a></li>
-<li>5.   <a href="#rfc.references">Informative References</a></li>
+<li>2.   <a href="#rfc.section.2">Experiences from Current WGs Actively Using GitHub</a></li>
+<ul><li>2.1.   <a href="#rfc.section.2.1">HTTPBIS</a></li>
+<li>2.2.   <a href="#rfc.section.2.2">TLS</a></li>
+<li>2.3.   <a href="#rfc.section.2.3">ACME</a></li>
+<li>2.4.   <a href="#rfc.section.2.4">CORE</a></li>
+</ul><li>3.   <a href="#rfc.section.3">Security Considerations</a></li>
+<li>4.   <a href="#rfc.section.4">IANA Considerations</a></li>
+<li>5.   <a href="#rfc.section.5">Acknowledgments</a></li>
+<li>6.   <a href="#rfc.references">Informative References</a></li>
 <li><a href="#rfc.authors">Author's Address</a></li>
 
 
   </ul>
 
   <h1 id="rfc.section.1"><a href="#rfc.section.1">1.</a> <a href="#introduction" id="introduction">Introduction</a></h1>
-<h1 id="rfc.section.2"><a href="#rfc.section.2">2.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a></h1>
-<p id="rfc.section.2.p.1">This document raises no security considerations.</p>
-<h1 id="rfc.section.3"><a href="#rfc.section.3">3.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a></h1>
-<p id="rfc.section.3.p.1">This document has no IANA considerations.</p>
-<h1 id="rfc.section.4"><a href="#rfc.section.4">4.</a> <a href="#acknowledgments" id="acknowledgments">Acknowledgments</a></h1>
-<p id="rfc.section.4.p.1">Lars Eggert has received funding from the European Union&#8217;s Horizon 2020 research and innovation program 2014-2018 under grant agreement 644866 (&#8220;SSICLOPS&#8221;). This document reflects only the authors&#8217; views and the European Commission is not responsible for any use that may be made of the information it contains.</p>
-<p id="rfc.section.4.p.2">This document is being prepared in a <a href="#REPO">Github repository</a> <cite title="NONE">[REPO]</cite> using Martin Thomson&#8217;s <a href="#ID-TEMPLATE">I-D template</a> <cite title="NONE">[ID-TEMPLATE]</cite> and Carsten Bormann&#8217;s <a href="#KRAMDOWN-RFC2629">[KRAMDOWN-RFC2629]</a>.</p>
-<h1 id="rfc.references"><a href="#rfc.references">5.</a> Informative References</h1>
+<h1 id="rfc.section.2"><a href="#rfc.section.2">2.</a> <a href="#experiences-from-current-wgs-actively-using-github" id="experiences-from-current-wgs-actively-using-github">Experiences from Current WGs Actively Using GitHub</a></h1>
+<h1 id="rfc.section.2.1"><a href="#rfc.section.2.1">2.1.</a> <a href="#httpbis" id="httpbis">HTTPBIS</a></h1>
+<h1 id="rfc.section.2.2"><a href="#rfc.section.2.2">2.2.</a> <a href="#tls" id="tls">TLS</a></h1>
+<h1 id="rfc.section.2.3"><a href="#rfc.section.2.3">2.3.</a> <a href="#acme" id="acme">ACME</a></h1>
+<h1 id="rfc.section.2.4"><a href="#rfc.section.2.4">2.4.</a> <a href="#core" id="core">CORE</a></h1>
+<p id="rfc.section.2.4.p.1">[blame Carsten Bormann for this subsection]</p>
+<p id="rfc.section.2.4.p.2">The CoRE WG (Constrained RESTful Environments) has been actively using the Trac/SVN combination offered by the Tools Team for its older drafts.  Some newer drafts (including some drafts that are not yet WG drafts but could be considered candidates for that) are now being worked on in the <samp>core-wg</samp> github organization.  These drafts generally use Martin Thomson&#8217;s template, except where the build process (examples, grammars) is much more complicated than can easily be supported by this template.</p>
+<p id="rfc.section.2.4.p.3">We try to keep discussion on the mailing list (as opposed to getting them entirely in the github issues), but may not have been very successful in that; it definitely requires constant vigilance.</p>
+<p id="rfc.section.2.4.p.4">The <a href="https://trac.ietf.org/trac/core/wiki">WG Wiki</a> says:</p>
+<p/>
+
+<ul class="empty">
+  <li>With respect to the mode of operation of the repository, the CoRE WG follows the lead of the HTTPBIS WG [add link here]. Specifically that means that github issues are welcome to record editorial issues as well as technical ones; as are &#8220;pull requests&#8221; (forks of the repository with fixes for an issue). However, technical discussion should not happen in the forums implicitly created by the issues, but on the WG mailing list.</li>
+</ul>
+<p id="rfc.section.2.4.p.6">We currently do not have an active backup regime.</p>
+<p id="rfc.section.2.4.p.7">(Add similar text for 6Lo, T2TRG, LWIG, CBOR, LPWAN&#8230;)</p>
+<h1 id="rfc.section.3"><a href="#rfc.section.3">3.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a></h1>
+<p id="rfc.section.3.p.1">This document raises no security considerations.</p>
+<h1 id="rfc.section.4"><a href="#rfc.section.4">4.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a></h1>
+<p id="rfc.section.4.p.1">This document has no IANA considerations.</p>
+<h1 id="rfc.section.5"><a href="#rfc.section.5">5.</a> <a href="#acknowledgments" id="acknowledgments">Acknowledgments</a></h1>
+<p id="rfc.section.5.p.1">Lars Eggert has received funding from the European Union&#8217;s Horizon 2020 research and innovation program 2014-2018 under grant agreement 644866 (&#8220;SSICLOPS&#8221;). This document reflects only the authors&#8217; views and the European Commission is not responsible for any use that may be made of the information it contains.</p>
+<p id="rfc.section.5.p.2">This document is being prepared in a <a href="#REPO">Github repository</a> <cite title="NONE">[REPO]</cite> using Martin Thomson&#8217;s <a href="#ID-TEMPLATE">I-D template</a> <cite title="NONE">[ID-TEMPLATE]</cite> and Carsten Bormann&#8217;s <a href="#KRAMDOWN-RFC2629">[KRAMDOWN-RFC2629]</a>.</p>
+<h1 id="rfc.references"><a href="#rfc.references">6.</a> Informative References</h1>
 <table>
   <tbody>
     <tr>

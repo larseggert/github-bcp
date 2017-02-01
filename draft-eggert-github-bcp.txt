@@ -4,8 +4,8 @@
 
 Network Working Group                                          L. Eggert
 Internet-Draft                                                    NetApp
-Intended status: Best Current Practice                  January 20, 2017
-Expires: July 24, 2017
+Intended status: Best Current Practice                 February 01, 2017
+Expires: August 5, 2017
 
 
                   Using GitHub for IETF Working Groups
@@ -31,7 +31,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 24, 2017.
+   This Internet-Draft will expire on August 5, 2017.
 
 Copyright Notice
 
@@ -53,31 +53,85 @@ Copyright Notice
 
 
 
-Eggert                    Expires July 24, 2017                 [Page 1]
+Eggert                   Expires August 5, 2017                 [Page 1]
 
-Internet-Draft    Using GitHub for IETF Working Groups      January 2017
+Internet-Draft    Using GitHub for IETF Working Groups     February 2017
 
 
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
-   2.  Security Considerations . . . . . . . . . . . . . . . . . . .   2
-   3.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   2
-   4.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .   2
-   5.  Informative References  . . . . . . . . . . . . . . . . . . .   2
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   3
+   2.  Experiences from Current WGs Actively Using GitHub  . . . . .   2
+     2.1.  HTTPBIS . . . . . . . . . . . . . . . . . . . . . . . . .   2
+     2.2.  TLS . . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+     2.3.  ACME  . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+     2.4.  CORE  . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
+   4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
+   5.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .   3
+   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   3
+     6.1.  Informative References  . . . . . . . . . . . . . . . . .   3
+     6.2.  URIs  . . . . . . . . . . . . . . . . . . . . . . . . . .   4
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   4
 
 1.  Introduction
 
-2.  Security Considerations
+2.  Experiences from Current WGs Actively Using GitHub
+
+2.1.  HTTPBIS
+
+2.2.  TLS
+
+2.3.  ACME
+
+2.4.  CORE
+
+   [blame Carsten Bormann for this subsection]
+
+   The CoRE WG (Constrained RESTful Environments) has been actively
+   using the Trac/SVN combination offered by the Tools Team for its
+   older drafts.  Some newer drafts (including some drafts that are not
+   yet WG drafts but could be considered candidates for that) are now
+   being worked on in the "core-wg" github organization.  These drafts
+   generally use Martin Thomson's template, except where the build
+   process (examples, grammars) is much more complicated than can easily
+   be supported by this template.
+
+   We try to keep discussion on the mailing list (as opposed to getting
+   them entirely in the github issues), but may not have been very
+   successful in that; it definitely requires constant vigilance.
+
+   The WG Wiki [1] says:
+
+      With respect to the mode of operation of the repository, the CoRE
+      WG follows the lead of the HTTPBIS WG [add link here].
+      Specifically that means that github issues are welcome to record
+
+
+
+Eggert                   Expires August 5, 2017                 [Page 2]
+
+Internet-Draft    Using GitHub for IETF Working Groups     February 2017
+
+
+      editorial issues as well as technical ones; as are "pull requests"
+      (forks of the repository with fixes for an issue).  However,
+      technical discussion should not happen in the forums implicitly
+      created by the issues, but on the WG mailing list.
+
+   We currently do not have an active backup regime.
+
+   (Add similar text for 6Lo, T2TRG, LWIG, CBOR, LPWAN...)
+
+3.  Security Considerations
 
    This document raises no security considerations.
 
-3.  IANA Considerations
+4.  IANA Considerations
 
    This document has no IANA considerations.
 
-4.  Acknowledgments
+5.  Acknowledgments
 
    Lars Eggert has received funding from the European Union's Horizon
    2020 research and innovation program 2014-2018 under grant agreement
@@ -89,7 +143,9 @@ Table of Contents
    Martin Thomson's I-D template [ID-TEMPLATE] and Carsten Bormann's
    [KRAMDOWN-RFC2629].
 
-5.  Informative References
+6.  References
+
+6.1.  Informative References
 
    [ID-TEMPLATE]
               Thomson, M., "martinthomson/i-d-template", n.d.,
@@ -109,10 +165,14 @@ Table of Contents
 
 
 
-Eggert                    Expires July 24, 2017                 [Page 2]
+Eggert                   Expires August 5, 2017                 [Page 3]
 
-Internet-Draft    Using GitHub for IETF Working Groups      January 2017
+Internet-Draft    Using GitHub for IETF Working Groups     February 2017
 
+
+6.2.  URIs
+
+   [1] https://trac.ietf.org/trac/core/wiki
 
 Author's Address
 
@@ -161,8 +221,4 @@ Author's Address
 
 
 
-
-
-
-
-Eggert                    Expires July 24, 2017                 [Page 3]
+Eggert                   Expires August 5, 2017                 [Page 4]
