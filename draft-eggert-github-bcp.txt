@@ -4,8 +4,8 @@
 
 Network Working Group                                          L. Eggert
 Internet-Draft                                                    NetApp
-Intended status: Best Current Practice                 February 01, 2017
-Expires: August 5, 2017
+Intended status: Best Current Practice                 February 02, 2017
+Expires: August 6, 2017
 
 
                   Using GitHub for IETF Working Groups
@@ -31,7 +31,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 5, 2017.
+   This Internet-Draft will expire on August 6, 2017.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Eggert                   Expires August 5, 2017                 [Page 1]
+Eggert                   Expires August 6, 2017                 [Page 1]
 
 Internet-Draft    Using GitHub for IETF Working Groups     February 2017
 
@@ -64,7 +64,7 @@ Table of Contents
    2.  Experiences from Working Groups . . . . . . . . . . . . . . .   2
      2.1.  CORE  . . . . . . . . . . . . . . . . . . . . . . . . . .   2
      2.2.  QUIC  . . . . . . . . . . . . . . . . . . . . . . . . . .   3
-   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
    4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    5.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .   5
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
@@ -103,16 +103,29 @@ Table of Contents
       discussion should not happen in the forums implicitly created by
       the issues, but on the WG mailing list.
 
-   We currently do not have an active backup regime.
-
-   (Add similar text for 6Lo, T2TRG, LWIG, CBOR, LPWAN...)
-
+   We currently do not have an active backup regime; we would expect the
+   IETF to come up with one that we can share.
 
 
-Eggert                   Expires August 5, 2017                 [Page 2]
+
+
+Eggert                   Expires August 6, 2017                 [Page 2]
 
 Internet-Draft    Using GitHub for IETF Working Groups     February 2017
 
+
+   As the contributors to CoRE are not necessarily deeply involved in
+   software projects that already make use of github, moving work to
+   github may create a sudden barrier of entry for some contributors at
+   the same time as other contributors report that the work got much
+   easier for them.  Also, accidents do happen (such as committing
+   versions of a text that suddenly have CRLF line endings), and some
+   authors may not know how to fix them.
+
+   (There is a separate, chairs-only github organization for chair
+   materials.)
+
+   (Add similar text for 6Lo, T2TRG, LWIG, CBOR, LPWAN...)
 
 2.2.  QUIC
 
@@ -150,6 +163,13 @@ Internet-Draft    Using GitHub for IETF Working Groups     February 2017
    we use his setup I-D template [ID-TEMPLATE] to rapidly publish HTML
    editor copies of the specs.
 
+
+
+Eggert                   Expires August 6, 2017                 [Page 3]
+
+Internet-Draft    Using GitHub for IETF Working Groups     February 2017
+
+
    The "base drafts" repo is configured to allow issues to be raised,
    and its wiki is enabled (but rarely used.)  Editors (and chairs) have
    commit rights to this repo.
@@ -162,14 +182,6 @@ Internet-Draft    Using GitHub for IETF Working Groups     February 2017
    on each issue (with states that currently include "needs-discussion",
    "confirm-consensus", "notify-consensus" and "editor-ready").  Issues
    progress from "needs-discussion" to either "confirm-consensus" or
-
-
-
-Eggert                   Expires August 5, 2017                 [Page 3]
-
-Internet-Draft    Using GitHub for IETF Working Groups     February 2017
-
-
    "notify-consensus".  The former is entered when consensus amongst the
    participants in the discussion has emerged, and the WG needs to
    confirm this consensus on the list.  The latter is entered when a
@@ -206,6 +218,14 @@ Internet-Draft    Using GitHub for IETF Working Groups     February 2017
    notification emails to an IETF list.  One caveat here is that GitHub
    uses the email address associated with the user who is interacting
    with the web site as the sender address of notification emails, which
+
+
+
+Eggert                   Expires August 6, 2017                 [Page 4]
+
+Internet-Draft    Using GitHub for IETF Working Groups     February 2017
+
+
    requires regular whitelisting in mailman.  It also means that these
    users are allowed to otherwise email the issues list; we trust they
    don't.  This email integration is rather dissatisfyingly complex;
@@ -214,17 +234,6 @@ Internet-Draft    Using GitHub for IETF Working Groups     February 2017
 3.  Security Considerations
 
    This document raises no security considerations.
-
-
-
-
-
-
-
-Eggert                   Expires August 5, 2017                 [Page 4]
-
-Internet-Draft    Using GitHub for IETF Working Groups     February 2017
-
 
 4.  IANA Considerations
 
@@ -266,6 +275,13 @@ Internet-Draft    Using GitHub for IETF Working Groups     February 2017
 
    [2] http://httpwg.org/
 
+
+
+Eggert                   Expires August 6, 2017                 [Page 5]
+
+Internet-Draft    Using GitHub for IETF Working Groups     February 2017
+
+
    [3] https://datatracker.ietf.org/wg/quic/charter/
 
    [4] https://github.com/quicwg
@@ -273,14 +289,6 @@ Internet-Draft    Using GitHub for IETF Working Groups     February 2017
    [5] https://github.com/orgs/quicwg/teams/editors
 
    [6] https://github.com/orgs/quicwg/teams/contributors
-
-
-
-
-Eggert                   Expires August 5, 2017                 [Page 5]
-
-Internet-Draft    Using GitHub for IETF Working Groups     February 2017
-
 
    [7] https://github.com/quicwg/wg-materials
 
@@ -325,12 +333,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-
-Eggert                   Expires August 5, 2017                 [Page 6]
+Eggert                   Expires August 6, 2017                 [Page 6]
