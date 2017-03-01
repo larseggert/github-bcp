@@ -67,9 +67,16 @@ drafts.
 Some newer drafts (including some drafts that are not yet WG drafts
 but could be considered candidates for that) are now being worked on
 in the `core-wg` github organization.
+
 These drafts generally use Martin Thomson's template, except where the
 build process (examples, grammars) is much more complicated than can
 easily be supported by this template.
+For most repos, a CI (continuous integration) process is set up that
+generates a readable editor's copy (in HTML form) as well as a diff
+from the most recent submitted version (tools TXT diff), linked from
+the README; both have turned out to be very valuable.  (Unfortunately, the
+travis-based CI process is somewhat brittle, so there is an
+appreciable failure rate.)
 
 We try to keep discussion on the mailing list (as opposed to getting
 them entirely in the github issues), but may not have been very
